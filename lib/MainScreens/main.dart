@@ -10,8 +10,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-    
-        primarySwatch: Colors.blue,
+        primaryColor: Color(0xff2c2b50),
+        accentColor: Color(0xffedecee),
+        primaryColorLight: Color(0xff57547c),
+        primaryColorDark: Color(0xff050028),
+       // backgroundColor: Color(0xffffffff),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+
       ),
      );
   }
@@ -31,10 +36,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
       return Scaffold(
-      appBar: AppBar(
-          title: Text(widget.title),
-      ),
-      body:,
+      appBar: AppBar(),
+      body:Center(),
       );
   }
 }
