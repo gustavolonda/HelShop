@@ -14,30 +14,25 @@ class MyApp extends StatelessWidget {
         accentColor: Color(0xffedecee),
         primaryColorLight: Color(0xff57547c),
         primaryColorDark: Color(0xff050028),
-       // backgroundColor: Color(0xffffffff),
+        // backgroundColor: Color(0xffffffff),
         visualDensity: VisualDensity.adaptivePlatformDensity,
-
       ),
-     );
+      home: MyHomePage(),
+    );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
-  
-
   @override
   Widget build(BuildContext context) {
-      return Scaffold(
+    return Scaffold(
       appBar: AppBar(),
-      body:Center(),
-      );
+      body: Center(),
+    );
   }
 }
